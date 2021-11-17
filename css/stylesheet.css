@@ -1,0 +1,549 @@
+/* welkom in het css bestand van Luc Stoffels zijn html5 website */
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+/* De container */
+div#container {
+  width: 100%;
+  margin: auto;
+  margin-top: 0px;
+}
+
+/* de Header */
+header {
+    height: 200px;
+    background-image: linear-gradient(to right, #17181c , #067c4c);
+}
+
+
+ /* stijl van het logo */
+div#logo {
+  position: absolute;
+  top: 20px;
+  left: 780px;
+  background-color: #00ed93;
+  border-radius: 7px;
+ }
+
+ /* de text krxKen he */
+ .krxken {
+   position: absolute;
+   font-size: 50px;
+   color: white;
+   top: 5%;
+   left: 25%;
+   font-family: "Lucida Console", "Courier New", monospace;
+ }
+
+ /* Het logo van de mooie krxken*/
+.Logo {
+  width: 150px;
+  height: 140px;
+  border-radius: 5px;
+}
+
+/* Section waar de nav is en het article */
+section {
+  position: absolute;
+  top: 200px;
+  height: 75%;
+  width: 100%;
+  background-color: gray;
+}
+
+/* De navigatie */
+nav {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+  top: 5px;
+  right: 5px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #17181c , #00ffa0);
+}
+
+/* De list item van de navigatie */
+nav li{
+    display: inline;
+    width: 100px;
+    margin-right: 20px;
+}
+
+/* De navigatie tabs */
+.navigatie {
+    text-decoration: none;
+    font-family: 'Brush Script MT', cursive;
+    color: white;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding:1px 8px;
+    background-color: black;
+}
+
+/* De navigatie tabs wanneer je er overheen gaat met je muis */
+.navigatie:hover {
+    color: yellow;
+    border-color: yellow;
+}
+
+/* Het artikel waar de informatie komt te staan */
+article {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 210%;
+  background-color: gray;
+  font-size: 20px;
+  text-align: left;
+  text-indent: 15px;
+}
+
+/* De footer helemaal onderaan het scherm */
+footer {
+  position: fixed;
+  width: 100%;
+  height: 23px;
+  bottom: 0px;
+  font-size: 18px;
+  background-color: #0f4a34;
+  color: white;
+  text-align: center;
+}
+
+
+.mail {
+  color: #7cccea;
+  text-decoration: none;
+}
+
+.mail:hover {
+  color: yellow;
+}
+
+
+
+/* Dit geld alleen voor de ontwerp pagina  */
+.ontwerp {
+  position: absolute;
+  top: 5%;
+  max-width: 30%;
+  max-height: 30%;
+  left: 15px;
+}
+
+.resultaatPC {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  max-width: 40%;
+  max-height: 40%;
+  border: 4px solid black;
+}
+
+.resultaatPC_txt {
+  position: absolute;
+  top: 5px;
+  right: 15%;
+  font-size: 1.17em;
+}
+
+.resultaatTEL {
+  position: absolute;
+  top: 43%;
+  right: 22%;
+  max-width: 40%;
+  max-height: 40%;
+  border: 4px solid black;
+}
+
+.resultaatTEL_txt {
+  position: absolute;
+  top: 37%;
+  right: 15%;
+  font-size: 1.17em;
+}
+
+
+/* Dit geld alleen voor de opdrachten pagina */
+.klik {
+  color: white;
+  text-decoration: none;
+}
+
+.klik:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+
+
+/* Dit geld alleen voor de Over Mij pagina */
+.artikel {
+  position: absolute;
+  top: 10px;
+  font-size: 16px;
+}
+
+
+/* Dit geld alleen voor de Eendag pagina */
+.dagboek {
+  position: absolute;
+  top: 3%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+
+
+
+
+
+/* Dit is voor de rekenmachine */
+
+
+input[name="waarden1"] {
+  background-color: #ff9393;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+
+input[name="waarden2"] {
+  background-color: #ff9393;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+input[name="uitkomst"] {
+  background-color: #7aff7a;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Optel knop */
+input[name="optellen"] {
+  background-color: #7aff7a;
+  border-radius: 1000px;
+  width: 35px;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+}
+
+input[name="optellen"]:hover {
+  background-color: #004e00;
+  border-radius: 30%;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Aftrek knop */
+input[name="aftrekken"] {
+  background-color: #7aff7a;
+  width: 35px;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+}
+
+input[name="aftrekken"]:hover {
+  background-color: #004e00;
+  border-radius: 30%;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Delendoor knop */
+input[name="delen"] {
+  background-color: #7aff7a;
+  border-radius: 1000px;
+  width: 35px;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+}
+
+input[name="delen"]:hover {
+  background-color: #004e00;
+  border-radius: 30%;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Keer knop */
+input[name="keer"] {
+  background-color: #7aff7a;
+  border-radius: 1000px;
+  width: 35px;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+}
+
+input[name="keer"]:hover {
+  background-color: #004e00;
+  border-radius: 30%;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* Reset knop */
+input[name="reset"] {
+  background-color: black;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+input[name="reset"]:hover {
+  background-color: white;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+/* de soort van container waar de rekenmachine zich in bevindt */
+form[name="doos"] {
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  left: 40%;
+}
+
+.rekenmachine_txt {
+  position: absolute;
+  top: 15px;
+  left: 33%;
+  font-size: 35px;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:900&display=swap');
+ :root {
+	 --color-primary: #002626;
+	 --color-secondary: #f0f7ee;
+	 --duration: 1s;
+	 --nav-duration: calc(var(--duration) / 4);
+	 --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+	 --space: 1rem;
+	 --font-primary: 'Helvetica', sans-serif;
+	 --font-heading: 'Merriweather', serif;
+	 --font-size: 1.125rem;
+	 --line-height: 1.5;
+}
+ * {
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: var(--font-primary);
+	 font-size: var(--font-size);
+	 line-height: var(--line-height);
+}
+ h1 {
+	 margin-bottom: calc(var(--space) * 3);
+	 font-family: var(--font-heading);
+	 font-size: calc(var(--font-size) + 6vmin);
+	 line-height: calc(var(--line-height) / 1.25);
+}
+ .main-navigation-toggle {
+	 position: fixed;
+	 height: 1px;
+	 width: 1px;
+	 overflow: hidden;
+	 clip: rect(1px, 1px, 1px, 1px);
+	 white-space: nowrap;
+}
+ .main-navigation-toggle + label {
+	 position: fixed;
+	 top: calc(var(--space) * 1.5);
+	 right: calc(var(--space) * 2);
+	 cursor: pointer;
+	 z-index: 2;
+}
+ .icon--menu-toggle {
+	 --size: calc(1rem + 4vmin);
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: var(--size);
+	 height: var(--size);
+	 stroke-width: 6;
+}
+ .icon-group {
+	 transform: translateX(0);
+	 transition: transform var(--nav-duration) var(--ease);
+}
+ .icon--menu {
+	 stroke: var(--color-primary);
+}
+ .icon--close {
+	 stroke: var(--color-secondary);
+	 transform: translateX(-100%);
+}
+ .main-navigation {
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 display: flex;
+	 align-items: center;
+	 width: 100%;
+	 height: 100%;
+	 transform: translateX(-100%);
+	 transition: transform var(--nav-duration);
+	 z-index: 1;
+}
+ .main-navigation:after {
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background-color: var(--color-primary);
+	 transform-origin: 0 50%;
+	 z-index: -1;
+}
+ .main-navigation ul {
+	 font-size: 12vmin;
+	 font-family: var(--font-heading);
+	 width: 100%;
+}
+ .main-navigation li {
+	 --border-size: 1vmin;
+	 display: flex;
+	 align-items: center;
+	 position: relative;
+	 overflow: hidden;
+}
+ .main-navigation li:after {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 100%;
+	 height: var(--border-size);
+	 background-color: var(--color-secondary);
+	 transform-origin: 0 50%;
+	 transform: translateX(-100%) skew(15deg);
+}
+ .main-navigation a {
+	 display: inline-block;
+	 width: 100%;
+	 max-width: 800px;
+	 margin: 0 auto;
+	 color: var(--color-secondary);
+	 line-height: 1;
+	 text-decoration: none;
+	 user-select: none;
+	 padding: var(--space) calc(var(--space) * 2) calc(var(--space) + var(--border-size) / 2);
+	 transform: translateY(100%);
+}
+ .main-content {
+	 margin: 6rem auto;
+	 max-width: 70ch;
+	 padding: 0 calc(var(--space) * 2);
+	 transform: translateX(0);
+	 transition: transform calc(var(--nav-duration) * 2) var(--ease);
+}
+ .main-content > * + * {
+	 margin-top: calc(var(--space) * var(--line-height));
+}
+ .main-navigation-toggle:checked ~ label .icon--menu-toggle .icon-group {
+	 transform: translateX(100%);
+}
+ .main-navigation-toggle:checked ~ .main-content {
+	 transform: translateX(10%);
+}
+ .main-navigation-toggle:checked ~ .main-navigation {
+	 transition-duration: 0s;
+	 transform: translateX(0);
+}
+ .main-navigation-toggle:checked ~ .main-navigation:after {
+	 animation: nav-bg var(--nav-duration) var(--ease) forwards;
+}
+ .main-navigation-toggle:checked ~ .main-navigation li:after {
+	 animation: nav-line var(--duration) var(--ease) forwards;
+}
+ .main-navigation-toggle:checked ~ .main-navigation a {
+	 animation: link-appear calc(var(--duration) * 1.5) var(--ease) forwards;
+}
+ .main-navigation-toggle:checked ~ .main-navigation li:nth-child(1):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(1) a {
+	 animation-delay: calc((var(--duration) / 2) * 1 * 0.125);
+}
+ .main-navigation-toggle:checked ~ .main-navigation li:nth-child(2):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(2) a {
+	 animation-delay: calc((var(--duration) / 2) * 2 * 0.125);
+}
+ .main-navigation-toggle:checked ~ .main-navigation li:nth-child(3):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(3) a {
+	 animation-delay: calc((var(--duration) / 2) * 3 * 0.125);
+}
+ .main-navigation-toggle:checked ~ .main-navigation li:nth-child(4):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(4) a {
+	 animation-delay: calc((var(--duration) / 2) * 4 * 0.125);
+}
+ @keyframes nav-bg {
+	 from {
+		 transform: translateX(-100%) skewX(-15deg);
+	}
+	 to {
+		 transform: translateX(0);
+	}
+}
+ @keyframes nav-line {
+	 0% {
+		 transform: scaleX(0);
+		 transform-origin: 0 50%;
+	}
+	 35% {
+		 transform: scaleX(1.001);
+		 transform-origin: 0 50%;
+	}
+	 65% {
+		 transform: scaleX(1.001);
+		 transform-origin: 100% 50%;
+	}
+	 100% {
+		 transform: scaleX(0);
+		 transform-origin: 100% 50%;
+	}
+}
+ @keyframes link-appear {
+	 0%, 25% {
+		 transform: translateY(100%);
+	}
+	 50%, 100% {
+		 transform: translateY(0);
+	}
+}
+ 

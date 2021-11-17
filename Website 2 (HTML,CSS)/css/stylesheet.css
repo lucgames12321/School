@@ -1,0 +1,349 @@
+/* welkom in het css bestand van Luc Stoffels zijn html5 website */
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+/* De container */
+div#container {
+  width: 100%;
+  margin: auto;
+  margin-top: 0px;
+}
+
+/* de Header */
+header {
+    height: 200px;
+    background-image: linear-gradient(to right, #17181c , #067c4c);
+}
+
+
+ /* stijl van het logo */
+div#logo {
+  position: absolute;
+  top: 20px;
+  left: 780px;
+  background-color: #00ed93;
+  border-radius: 7px;
+ }
+
+ /* de text krxKen he */
+ .krxken {
+   position: absolute;
+   font-size: 50px;
+   color: white;
+   top: 5%;
+   left: 25%;
+   font-family: "Lucida Console", "Courier New", monospace;
+ }
+
+ /* Het logo van de mooie krxken*/
+.Logo {
+  width: 150px;
+  height: 140px;
+  border-radius: 5px;
+}
+
+/* Section waar de nav is en het article */
+section {
+  position: absolute;
+  top: 200px;
+  height: 75%;
+  width: 100%;
+  background-color: gray;
+}
+
+/* De navigatie */
+nav {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+  top: 5px;
+  right: 5px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #17181c , #00ffa0);
+}
+
+/* De list item van de navigatie */
+nav li{
+    display: inline;
+    width: 100px;
+    margin-right: 20px;
+}
+
+/* De navigatie tabs */
+.navigatie {
+    text-decoration: none;
+    font-family: 'Brush Script MT', cursive;
+    color: white;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding:1px 8px;
+    background-color: black;
+}
+
+/* De navigatie tabs wanneer je er overheen gaat met je muis */
+.navigatie:hover {
+    color: yellow;
+    border-color: yellow;
+}
+
+/* Het artikel waar de informatie komt te staan */
+article {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 210%;
+  background-color: gray;
+  font-size: 20px;
+  text-align: left;
+  text-indent: 15px;
+}
+
+/* De footer helemaal onderaan het scherm */
+footer {
+  position: fixed;
+  width: 100%;
+  height: 23px;
+  bottom: 0px;
+  font-size: 18px;
+  background-color: #0f4a34;
+  color: white;
+  text-align: center;
+}
+
+
+.mail {
+  color: #7cccea;
+  text-decoration: none;
+}
+
+.mail:hover {
+  color: yellow;
+}
+
+
+
+/* Dit geld alleen voor de ontwerp pagina  */
+.ontwerp {
+  position: absolute;
+  top: 5%;
+  max-width: 30%;
+  max-height: 30%;
+  left: 15px;
+}
+
+.resultaatPC {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  max-width: 40%;
+  max-height: 40%;
+  border: 4px solid black;
+}
+
+.resultaatPC_txt {
+  position: absolute;
+  top: 5px;
+  right: 15%;
+  font-size: 1.17em;
+}
+
+.resultaatTEL {
+  position: absolute;
+  top: 43%;
+  right: 22%;
+  max-width: 40%;
+  max-height: 40%;
+  border: 4px solid black;
+}
+
+.resultaatTEL_txt {
+  position: absolute;
+  top: 37%;
+  right: 15%;
+  font-size: 1.17em;
+}
+
+
+/* Dit geld alleen voor de opdrachten pagina */
+.klik {
+  color: white;
+  text-decoration: none;
+}
+
+.klik:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+
+
+/* Dit geld alleen voor de Over Mij pagina */
+.artikel {
+  position: absolute;
+  top: 10px;
+  font-size: 16px;
+}
+
+
+/* Dit geld alleen voor de Eendag pagina */
+.dagboek {
+  position: absolute;
+  top: 3%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+
+
+
+
+
+/* Dit is voor de rekenmachine */
+
+
+input[name="waarden1"] {
+  background-color: #ff9393;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+
+input[name="waarden2"] {
+  background-color: #ff9393;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+input[name="uitkomst"] {
+  background-color: #7aff7a;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Optel knop */
+input[name="optellen"] {
+  background-color: #7aff7a;
+  border-radius: 1000px;
+  width: 35px;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+}
+
+input[name="optellen"]:hover {
+  background-color: #004e00;
+  border-radius: 30%;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Aftrek knop */
+input[name="aftrekken"] {
+  background-color: #7aff7a;
+  width: 35px;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+}
+
+input[name="aftrekken"]:hover {
+  background-color: #004e00;
+  border-radius: 30%;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Delendoor knop */
+input[name="delen"] {
+  background-color: #7aff7a;
+  border-radius: 1000px;
+  width: 35px;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+}
+
+input[name="delen"]:hover {
+  background-color: #004e00;
+  border-radius: 30%;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Keer knop */
+input[name="keer"] {
+  background-color: #7aff7a;
+  border-radius: 1000px;
+  width: 35px;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+}
+
+input[name="keer"]:hover {
+  background-color: #004e00;
+  border-radius: 30%;
+  border: 2px solid black;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* Reset knop */
+input[name="reset"] {
+  background-color: black;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+input[name="reset"]:hover {
+  background-color: white;
+  border-radius: 1000px;
+  border: 2px solid black;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+/* de soort van container waar de rekenmachine zich in bevindt */
+form[name="doos"] {
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  left: 40%;
+}
+
+.rekenmachine_txt {
+  position: absolute;
+  top: 15px;
+  left: 33%;
+  font-size: 35px;
+}

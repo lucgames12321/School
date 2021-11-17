@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moie Rekenmachine</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+
+    <script type="text/javascript">
+
+        function OpTellen()
+        {
+          var x=parseInt(document.forms[0].waarden1.value);
+          var y=parseInt(document.forms[0].waarden2.value);
+          var z= x+y;
+          document.forms[0].uitkomst.value = String(z);
+        }
+
+        function Aftrekken()
+        {
+          var x=parseInt(document.forms[0].waarden1.value);
+          var y=parseInt(document.forms[0].waarden2.value);
+          var z= x-y;
+          document.forms[0].uitkomst.value = String(z);
+        }
+
+        function Delen()
+        {
+          var x=parseInt(document.forms[0].waarden1.value);
+          var y=parseInt(document.forms[0].waarden2.value);
+          var z= x/y;
+          document.forms[0].uitkomst.value = String(z);
+        }
+
+        function Keer()
+        {
+          var x=parseInt(document.forms[0].waarden1.value);
+          var y=parseInt(document.forms[0].waarden2.value);
+          var z= x*y;
+          document.forms[0].uitkomst.value = String(z);
+        }
+
+
+        function LeegMaken(){
+          document.forms[0].waarden1.value="";
+          document.forms[0].waarden2.value="";
+          document.forms[0].uitkomst.value="";
+        }
+  </script>
+  </head>
+
+  <body>
+
+    <div id="container">
+
+
+      <header>
+        <h1 class="krxken">KrxKen he</h1>
+        <div id="logo">
+          <img class="Logo" src="img/logo.png" alt="Logo">
+        </div>
+      </header>
+
+
+      <section>
+
+        <nav>
+          <ul>
+            <li><a class="navigatie" href="index.html"><strong> Home </strong></a></li>
+            <li><a class="navigatie" href="overmij.html"><strong> Over mij </strong></a></li>
+            <li><a class="navigatie" href="eendag.html"><strong> Eendag </strong></a></li>
+            <li><a class="navigatie" href="opdrachten.html"><strong> Opdrachten </strong></a></li>
+            <li><a class="navigatie" href="ontwerp.html"><strong> Ontwerp </strong></a></li>
+            <li><a class="navigatie" href="website1/index.html"><strong> Oude Website </strong></a></li>
+            </ul>
+        </nav>
+
+        <article>
+          <h1 class="rekenmachine_txt">Rekenmachine gemaakt in Javascript</h1>
+
+          <FORM name="doos">
+            <input type="text" name="waarden1" value="0"><br><br>
+            <input type="text" name="waarden2" value="0"><br><br>
+            <input type="text" name="uitkomst" value="uitkomst"><br><br>
+
+            <input type="Button" name="optellen" value="+" onclick="OpTellen()">
+            <input type="Button" name="aftrekken" value="-" onclick="Aftrekken()">
+            <input type="Button" name="delen" value="/" onclick="Delen()">
+            <input type="Button" name="keer" value="X" onclick="Keer()"><br><br>
+
+            <input type="Button" name="reset" value="Reset" onclick="LeegMaken()">
+          </FORM>
+        </article>
+
+      </section>
+
+
+      <footer>
+        © 2020-2021 Luc Stoffels
+        <a class="mail" href="mailto:lucstoffels@ogvo.nl"><strong>Contact<strong></a>
+      </footer>
+
+    </div>
+
+
+
+  </body>
+</html>

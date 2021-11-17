@@ -1,0 +1,88 @@
+<div class="artikel">
+            <table border="1">
+              <tr>
+                <td width="120"> Naam:</td><td width="700">Luc Pantoffels de gek des kaas</td>
+              </tr>
+
+              <tr>
+                <td> Dit ben ik:</td><td> <a href="img/9462_groot.jpg" target="_blank" border="0"><img src="img/9462_klein.jpg"></a> </td>
+              </tr>
+
+              <tr>
+                <td> Mijn Klas:</td><td>WEET IK NIET WANT JULLIE ZIJN ZOO SLOOM DAAR OP SCHOOL DUURT WEL LANG</td>
+              </tr>
+
+              <tr>
+                <td> Mijn hobby's:<br><br><br><br><br><br><br>  </td>
+                <td>
+                  <ul>
+                    <li>Gamen, ik game graag en speel dan spellen zoals Minecraft, FiveM en ETS2.</li>
+                    <li>Sporten, ik doe aan Badminton want dat vind ik leuk om te doen.</li>
+                    <li>Programmeren, ik vind het leuk om te leren programmeren in verschillende talen.</li>
+                    <li>Eten, ik eet graag heel veel eten.</li>
+                    <li>CGI, ik vind het leuk om mijn eigen CGI te maken in een progamma genaam Blender.</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Mijn vervolg opleiding:</td><td>Ik wil graag HBO-ICT (Game Development of cybersecurity) of HLO gaan doen.</td>
+              </tr>
+
+              <tr>
+                <td>Wat ik al weet van Informatica:<br><br><br><br></td>
+                <td>
+                  <ul>
+                    <li>Hoe je een simpele website maakt.</li>
+                    <li>Hoe je een HTML5 website maakt.</li>
+                    <li>Hoe Computers werken</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Wat ik wil leren bij Informatica:<br><br><br></td>
+                <td>
+                  <ul>
+                    <li>Hoe je een PHP website maakt.</li>
+                    <li>Hoe je Javascript gaat gerbuiken in een website.</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Favorite Bands/ artiesten:<br><br><br><br><br><br><br><br></td>
+                <td>Ik heb er heel veel maar mijn favorite zijn:
+                  <ul>
+                    <li>Scooter</li>
+                    <li>Headhunterz</li>
+                    <li>Basshunter</li>
+                    <li>Da Tweekaz</li>
+                    <li>Outsiders</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Favorite Liedjes:<br><br><br><br><br><br><br><br><br><br><br><br><br></td>
+                <td>De liedjes die ik het leukst vindt zijn: Kali Outsiders remix, FCK2020 en nog veel meer <br> hier de video van Kali-Outsider remix <br> <iframe width="427" height="240" src="https://www.youtube.com/embed/9H6TN2iHKN8" frameborder="0"> </iframe></td>
+              </tr>
+
+              <tr>
+                <td>Favorite kleur:</td><td>Geel</td>
+              </tr>
+
+              <tr>
+                <td>Geluks getal:</td><td>69</td>
+              </tr>
+
+              <tr>
+                <td>Favorite Pretpark en attractie:</td>
+                <td>
+                  <ul>
+                    <li>Pretpark: Efteling</li>
+                    <li>Attractie: De Bobslee (die er niet meer is)</li>
+                  </ul>
+                </td>
+              </tr>
+          </div>

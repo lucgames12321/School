@@ -1,0 +1,239 @@
+to foundation
+cs
+setpensize [1 1]
+setpc [0 0 0]
+pd
+Repeat 2 [fd 200 lt 90 fd 350 lt 90]
+pu
+fd 200
+pd
+fd 120
+lt 90
+fd 350
+lt 90
+fd 120
+pu
+lt 90
+fd 350
+rt 90
+pd
+fd 70
+lt 90
+fd 180
+rt 90
+fd 120
+rt 90
+fd 180
+
+pu
+rt 90
+fd 20
+rt 90
+fd 20
+pd
+Repeat 2 [fd 140 lt 90  fd 80 lt 90]
+lt 90
+fd 20 
+rt 90 
+fd 140 
+rt 180 
+fd 140 
+rt 90 
+rt 90 
+fd 140
+lt 90
+fd 20
+lt 90
+fd 140
+rt 90
+fd 20 
+rt 90
+fd 140
+rt 90
+fd 78
+rt 90
+fd 140
+rt 90
+fd 78
+pu
+home
+pd 
+fd 110 
+lt 90
+fd 350
+pu 
+home
+setxy -340 290 
+pd
+fd 60
+lt 90
+fd 5
+rt 90 
+fd 5
+rt 90
+fd 30
+rt 90
+fd 5
+rt 90
+fd 5
+lt 90
+fd 60
+rt 90
+fd 20
+end
+
+to kleur 
+pu
+home
+fd 20
+rt 90
+fd 80
+lt 90
+setfc [179 195 196]
+fill
+Repeat 4 [fd 20 fill]
+rt 90
+fd 85
+setfc [99 52 1]
+fill
+setxy -150 50
+setfc [122 63 0]
+fill
+lt 90
+fd 100
+fill
+fd 100
+setfc[150 45 0]
+fill 
+setxy -335 325
+setfc [64 64 64]
+fill
+setxy -335 300
+fill
+end
+
+to ramen
+pu 
+home
+setxy -320 30
+pd 
+repeat 2 [fd 60 rt 90 fd 110 rt 90]
+pu
+setxy -310 40
+setfc [138 204 209]
+fill
+setxy -80 40 
+pd 
+setpensize [5 5]
+setpc [87 87 87]
+repeat 2 [fd 40 rt 90 fd 20 rt 90]
+pu 
+setxy -70 50 
+fill
+setxy -330 130
+pd
+rt 90
+setpensize [8 8] 
+setpc [143 143 143]
+fd 130 
+setpensize [1 1]
+rt 180
+fd 10
+rt 90
+fd 60
+lt 90
+fd 110
+lt 90
+fd 60
+pu
+setxy -300 150
+fill
+setxy -265 130
+pd
+rt 180
+fd 60
+rt 180
+pu
+setpensize [8 8]
+setxy -110 130
+pd
+lt 90
+fd 90
+setpensize [1 1]
+rt 180
+fd 5 
+rt 90
+fd 50
+lt 90
+fd 80
+lt 90
+fd 50
+pu
+setxy -100 150 
+fill
+end
+
+
+
+
+to boom 
+pu
+home
+setxy -370 -60
+pd
+setpensize [15 15]
+setpc [87 35 0]
+fd 130
+pu
+fd 30
+pd
+setpensize [2 2]
+setpc [0 87 13]
+circle 60
+pu 
+setfc [0 128 19]
+fill
+setxy -370 60
+fill
+setxy -350 60
+fill
+setxy -340 60
+fill
+setxy -340 120
+fill
+setxy -330 130
+fill
+setxy -320 80
+fill
+setxy -315 80
+fill
+setxy -370 40
+end
+
+to sfeer  
+pu
+home 
+setxy -430 430
+pd
+setpensize [2 2]
+setpc [255 166 0] 
+circle 30+random 50
+setfc [255 234 0]
+fill 
+pu
+setxy 200 430
+setfc [213 236 237]
+fill 
+end
+
+
+to final
+foundation
+kleur
+ramen
+boom
+sfeer
+hideturtle
+end
+
+

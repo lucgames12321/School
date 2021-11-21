@@ -1,10 +1,41 @@
-/* welkom in het css bestand van Luc Stoffels zijn html5 website */
 
+
+
+/* 
+Medemogelijk gemaakt door https://codemyui.com/hamburger-menu-to-css-only-full-screen-slide-in-navigation-menu/
+
+En door Luc Stoffels zijn ouwe code wantja ik ben lui en Geen gemekker kaas is lekker 
+
+*/
+
+
+
+
+
+
+
+/* voor de font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
+/* variables die je snel kan aanpasse en dan ook worden aangepast op de website in het bboergir menu */
+ :root {
+	 --color-primary: #0f4a34;
+	 --color-secondary: #f0f7ee;
+	 --duration: 1.5s;
+	 --nav-duration: calc(var(--duration) / 4);
+	 --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+	 --space: 1rem;
+	 --font-primary: 'Helvetica', sans-serif;
+	 --font-heading: 'Merriweather', serif;
+	 --font-size: 1.125rem;
+	 --line-height: 1.5;
+}
 html, body {
     margin: 0px;
     padding: 0px;
     font-size: 13px;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     }
 
 /* De container */
@@ -51,320 +82,15 @@ div#logo {
 section {
   position: absolute;
   top: 200px;
-  height: 75%;
+  height: 100%;
   width: 100%;
   background-color: gray;
 }
 
-/* De navigatie */
-nav {
-  position: absolute;
-  display: inline-block;
-  margin: 0;
-  font-size: 20px;
-  top: 5px;
-  right: 5px;
-  border: 3px solid black;
-  border-radius: 10px;
-  background-image: linear-gradient(to top, #17181c , #00ffa0);
-}
-
-/* De list item van de navigatie */
-nav li{
-    display: inline;
-    width: 100px;
-    margin-right: 20px;
-}
-
-/* De navigatie tabs */
-.navigatie {
-    text-decoration: none;
-    font-family: 'Brush Script MT', cursive;
-    color: white;
-    border: 2px solid black;
-    border-radius: 100px;
-    padding:1px 8px;
-    background-color: black;
-}
-
-/* De navigatie tabs wanneer je er overheen gaat met je muis */
-.navigatie:hover {
-    color: yellow;
-    border-color: yellow;
-}
-
-/* Het artikel waar de informatie komt te staan */
-article {
-  position: absolute;
-  top: 80px;
-  width: 100%;
-  height: 210%;
-  background-color: gray;
-  font-size: 20px;
-  text-align: left;
-  text-indent: 15px;
-}
-
-/* De footer helemaal onderaan het scherm */
-footer {
-  position: fixed;
-  width: 100%;
-  height: 23px;
-  bottom: 0px;
-  font-size: 18px;
-  background-color: #0f4a34;
-  color: white;
-  text-align: center;
-}
-
-
-.mail {
-  color: #7cccea;
-  text-decoration: none;
-}
-
-.mail:hover {
-  color: yellow;
-}
 
 
 
-/* Dit geld alleen voor de ontwerp pagina  */
-.ontwerp {
-  position: absolute;
-  top: 5%;
-  max-width: 30%;
-  max-height: 30%;
-  left: 15px;
-}
-
-.resultaatPC {
-  position: absolute;
-  top: 5%;
-  right: 10%;
-  max-width: 40%;
-  max-height: 40%;
-  border: 4px solid black;
-}
-
-.resultaatPC_txt {
-  position: absolute;
-  top: 5px;
-  right: 15%;
-  font-size: 1.17em;
-}
-
-.resultaatTEL {
-  position: absolute;
-  top: 43%;
-  right: 22%;
-  max-width: 40%;
-  max-height: 40%;
-  border: 4px solid black;
-}
-
-.resultaatTEL_txt {
-  position: absolute;
-  top: 37%;
-  right: 15%;
-  font-size: 1.17em;
-}
-
-
-/* Dit geld alleen voor de opdrachten pagina */
-.klik {
-  color: white;
-  text-decoration: none;
-}
-
-.klik:hover {
-  color: yellow;
-  text-decoration: underline;
-}
-
-
-
-/* Dit geld alleen voor de Over Mij pagina */
-.artikel {
-  position: absolute;
-  top: 10px;
-  font-size: 16px;
-}
-
-
-/* Dit geld alleen voor de Eendag pagina */
-.dagboek {
-  position: absolute;
-  top: 3%;
-  max-width: 50%;
-  max-height: 50%;
-}
-
-
-
-
-
-
-/* Dit is voor de rekenmachine */
-
-
-input[name="waarden1"] {
-  background-color: #ff9393;
-  border-radius: 1000px;
-  border: 2px solid black;
-  font-size: 20px;
-  text-align: center;
-}
-
-input[name="waarden2"] {
-  background-color: #ff9393;
-  border-radius: 1000px;
-  border: 2px solid black;
-  font-size: 20px;
-  text-align: center;
-}
-
-
-input[name="uitkomst"] {
-  background-color: #7aff7a;
-  border-radius: 1000px;
-  border: 2px solid black;
-  font-size: 25px;
-  text-align: center;
-}
-
-/* Optel knop */
-input[name="optellen"] {
-  background-color: #7aff7a;
-  border-radius: 1000px;
-  width: 35px;
-  border: 2px solid black;
-  font-size: 25px;
-  text-align: center;
-}
-
-input[name="optellen"]:hover {
-  background-color: #004e00;
-  border-radius: 30%;
-  border: 2px solid black;
-  font-size: 25px;
-  text-align: center;
-  color: white;
-}
-
-
-/* Aftrek knop */
-input[name="aftrekken"] {
-  background-color: #7aff7a;
-  width: 35px;
-  border-radius: 1000px;
-  border: 2px solid black;
-  font-size: 25px;
-  text-align: center;
-}
-
-input[name="aftrekken"]:hover {
-  background-color: #004e00;
-  border-radius: 30%;
-  border: 2px solid black;
-  font-size: 25px;
-  text-align: center;
-  color: white;
-}
-
-
-/* Delendoor knop */
-input[name="delen"] {
-  background-color: #7aff7a;
-  border-radius: 1000px;
-  width: 35px;
-  border: 2px solid black;
-  font-size: 25px;
-  text-align: center;
-}
-
-input[name="delen"]:hover {
-  background-color: #004e00;
-  border-radius: 30%;
-  border: 2px solid black;
-  font-size: 25px;
-  text-align: center;
-  color: white;
-}
-
-
-/* Keer knop */
-input[name="keer"] {
-  background-color: #7aff7a;
-  border-radius: 1000px;
-  width: 35px;
-  border: 2px solid black;
-  font-size: 25px;
-  text-align: center;
-}
-
-input[name="keer"]:hover {
-  background-color: #004e00;
-  border-radius: 30%;
-  border: 2px solid black;
-  font-size: 25px;
-  text-align: center;
-  color: white;
-}
-
-
-
-/* Reset knop */
-input[name="reset"] {
-  background-color: black;
-  border-radius: 1000px;
-  border: 2px solid black;
-  font-size: 25px;
-  color: white;
-  text-align: center;
-}
-
-input[name="reset"]:hover {
-  background-color: white;
-  border-radius: 1000px;
-  border: 2px solid black;
-  font-size: 25px;
-  color: black;
-  text-align: center;
-}
-
-/* de soort van container waar de rekenmachine zich in bevindt */
-form[name="doos"] {
-  position: absolute;
-  text-align: center;
-  top: 10%;
-  left: 40%;
-}
-
-.rekenmachine_txt {
-  position: absolute;
-  top: 15px;
-  left: 33%;
-  font-size: 35px;
-}
-
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Merriweather:900&display=swap');
- :root {
-	 --color-primary: #002626;
-	 --color-secondary: #f0f7ee;
-	 --duration: 1s;
-	 --nav-duration: calc(var(--duration) / 4);
-	 --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
-	 --space: 1rem;
-	 --font-primary: 'Helvetica', sans-serif;
-	 --font-heading: 'Merriweather', serif;
-	 --font-size: 1.125rem;
-	 --line-height: 1.5;
-}
- * {
+* {
 	 box-sizing: border-box;
 }
  body {
@@ -372,11 +98,13 @@ form[name="doos"] {
 	 font-size: var(--font-size);
 	 line-height: var(--line-height);
 }
- h1 {
-	 margin-bottom: calc(var(--space) * 3);
-	 font-family: var(--font-heading);
-	 font-size: calc(var(--font-size) + 6vmin);
-	 line-height: calc(var(--line-height) / 1.25);
+
+
+
+article {
+     position: absolute;
+    font-family: raleway;
+    left: 2%;
 }
  .main-navigation-toggle {
 	 position: fixed;
@@ -387,9 +115,9 @@ form[name="doos"] {
 	 white-space: nowrap;
 }
  .main-navigation-toggle + label {
-	 position: fixed;
+	 position: absolute;
 	 top: calc(var(--space) * 1.5);
-	 right: calc(var(--space) * 2);
+	 left: calc(var(--space) * 2);
 	 cursor: pointer;
 	 z-index: 2;
 }
@@ -406,9 +134,15 @@ form[name="doos"] {
 	 transform: translateX(0);
 	 transition: transform var(--nav-duration) var(--ease);
 }
+
+
+/* kleur van die boergir */
  .icon--menu {
-	 stroke: var(--color-primary);
+	 stroke: #00ff9a;
 }
+
+
+
  .icon--close {
 	 stroke: var(--color-secondary);
 	 transform: translateX(-100%);
@@ -460,16 +194,21 @@ form[name="doos"] {
 	 transform: translateX(-100%) skew(15deg);
 }
  .main-navigation a {
-	 display: inline-block;
+	 display: list-item;
 	 width: 100%;
-	 max-width: 800px;
+	 max-width: 94%;
 	 margin: 0 auto;
 	 color: var(--color-secondary);
-	 line-height: 1;
+	 line-height: 1.5;
 	 text-decoration: none;
 	 user-select: none;
 	 padding: var(--space) calc(var(--space) * 2) calc(var(--space) + var(--border-size) / 2);
 	 transform: translateY(100%);
+	 font-family: raleway;
+	 font-size: 6rem;
+	border-radius: 25px;
+	border: 2px solid white;
+	background-color: #0f4a34;
 }
  .main-content {
 	 margin: 6rem auto;
@@ -546,4 +285,88 @@ form[name="doos"] {
 		 transform: translateY(0);
 	}
 }
- 
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 23px;
+    bottom: 0px;
+    font-size: 18px;
+    background-color: #0f4a34;
+    color: white;
+    text-align: center;
+  }
+
+  .mail {
+    color: #ff0000;
+    text-decoration: none;
+  }
+  
+  .mail:hover {
+    color: yellow;
+  }
+
+/* ja ff dat kleurtje verandere anders is het zo moker saai */
+  .main-navigation a:hover { 
+	color:yellow;
+	border-radius: 50px;
+	border: 5px solid yellow;
+	background-color: black;
+  }
+
+ /* .kaas {     			-- idk wat dit nog moet voorstelle op dit moment ik laat het gwn hier is leuk!
+	display: inline-block;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	line-height: 1.5;
+	border: 5px solid white;
+
+  } */
+
+
+  carousel {
+    position: absolute;
+    font-family: raleway;
+	width: 100%;
+	text-align: center;
+	font-family: Trebuchet MS;
+	display: block;
+	font-size: 6vmin;
+}
+carousel page {
+	position: absolute;
+	top: 2em;
+	left: 0;
+	width: 100%;
+	transition: transform 0.5s;
+	transform: scale(0);
+}
+carousel page div {
+	padding: 3em;
+}
+carousel page label {
+	cursor: pointer;
+	background: yellow;
+	padding: 1em 2em;
+	font-size: 30%;
+	border: 2px solid black;
+	border-radius: 25px;
+	font-family: 'Raleway';
+}
+carousel #page1cb:checked ~ #page1 {
+	transform: scale(1);
+}
+carousel #page2cb:checked ~ #page2 {
+	transform: scale(1);
+}
+carousel #page3cb:checked ~ #page3 {
+	transform: scale(1);
+}
+carousel #page4cb:checked ~ #page4 {
+	transform: scale(1);
+}
+carousel #page5cb:checked ~ #page5 {
+	transform: scale(1);
+}

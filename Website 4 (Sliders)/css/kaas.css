@@ -441,3 +441,12 @@ carousel #page5cb:checked ~ #page5 {
 	width: 25%;
 	height: auto;
 }
+
+
+.foto5 {
+	position: absolute;
+	top: 5%;
+	left: 37.5%;
+	width: 25%;
+	height: 125%;
+}

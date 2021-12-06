@@ -16,3 +16,19 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+
+var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("foto");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000); // Kaas is lekker ja 5000ms is dus 5 secondjes kan ook langer 
+              }

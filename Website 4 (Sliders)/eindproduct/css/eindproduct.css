@@ -2,6 +2,7 @@
 Medemogelijk gemaakt door:
  -- https://codemyui.com/hamburger-menu-to-css-only-full-screen-slide-in-navigation-menu/ -Burger menu
  -- https://codepen.io/ivorjetski/pen/jObwWYj -Carousel gebeure 
+ -- https://www.w3schools.com/howto/howto_js_collapsible.asp --Collapsable divs gedeuns ja wel leuk eig dit 
 
 
 En door Luc Stoffels zijn ouwe code wantja ik ben lui en Geen gemekker kaas is lekker 
@@ -11,7 +12,7 @@ En door Luc Stoffels zijn ouwe code wantja ik ben lui en Geen gemekker kaas is l
 
 
 /* voor de font */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Ubuntu&display=swap');
 
 
 /* variables die je snel kan aanpasse en dan ook worden aangepast op de website in het bboergir menu */
@@ -298,6 +299,7 @@ footer {
 
   .mail {
     color: #ff0000;
+	text-indent: 25px;
     text-decoration: none;
   }
   
@@ -326,7 +328,8 @@ footer {
 	font-family: Trebuchet MS;
 	display: block;
 	font-size: 6vmin;
-	cursor: default;
+	cursor: default; 
+	top: 100%;
 }
 
 carousel page {
@@ -450,3 +453,128 @@ carousel #page5cb:checked ~ #page5 {
 	width: 25%;
 	height: 125%;
 }
+
+.autoslider {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+	height: 200px;
+	width: 100%;
+	position: fixed;
+
+}
+
+.foto {
+	flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+
+
+
+							/*OPENKLAPPENDE DIVS BEGINT HIER BIER */
+
+
+h2 { 
+    font-family: 'Raleway';
+}
+.collapsible {
+    background-color: rgb(90, 90, 90);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Raleway';
+    border-radius: 5px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: rgb(32, 32, 32);
+  }
+  
+  .collapsible:after {
+    content: '\2BC5';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2BC6";
+  }
+  
+  .content {
+    padding: 0 18px;
+    font-family: 'Ubuntu';
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+
+
+
+
+												/*FLEXBOX BEGINT HIER BIER */
+
+  .flexbox {
+    display: -webkit-flex; /* De div waar de hele flexbox in zit en die flext zo hard in totaal niet normaaal kale koppe niet te stoppeeeee!!! */
+    display: flex;
+    gap: 10px;
+    gap: 10px 20px;
+    border: 0px solid rgb(0, 255, 0);
+	flex-wrap: wrap;
+    font-family: 'Raleway';
+  }
+
+.flexbox > div {
+	flex: 35%;
+}
+
+
+  .flex1 {
+    -webkit-flex: 1; /* Ja die flext zo hard dat hij altijd flext wanneer je de pagina resized */
+            flex: 1;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+	/* flex-grow: 0; */
+	width: 100%;
+  }
+  .flex2 {
+    -webkit-flex: 2; /* Ja precies het zelfde als flex1 maar dan voor de volgende flex en als je er nog meer maakt dan ja dan word dat natuurlijk 3 deuhhhh */
+            flex: 2;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+	/* flex-grow: 0; */
+	width: 100%;
+  }
+
+  .flex3 {
+    -webkit-flex: 3; /* Ja precies het zelfde als flex1 maar dan voor de volgende flex en als je er nog meer maakt dan ja dan word dat natuurlijk 3 deuhhhh */
+            flex: 3;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+	/* flex-grow: 0; */ 
+	width: 100%;
+  }
+
+  .flex4 {
+    -webkit-flex: 4; /* Ja precies het zelfde als flex1 maar dan voor de volgende flex en als je er nog meer maakt dan ja dan word dat natuurlijk 3 deuhhhh */
+            flex: 4;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+	/*flex-grow: 0; */
+	width: 100%;
+  }

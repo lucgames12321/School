@@ -1,0 +1,61 @@
+/* 
+Medemogelijk gemaakt door:
+ -- https://nl.learnlayout.com/flexbox.html
+
+
+En door Luc Stoffels zijn ouwe code wantja ik ben lui en Geen gemekker kaas is lekker 
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Ubuntu&display=swap'); /*Raleway en Ubuntu font wantja ubuntu is gwn koel vind ik */
+
+
+html,body {
+    background-color: gray; /* doet minder pijn aan mijn ogen als ik snacht hieraan werk ja */
+    font-family: 'Ubuntu';
+}
+
+
+
+.flexbox {
+    display: -webkit-flex; /* De div waar de hele flexbox in zit en die flext zo hard in totaal niet normaaal kale koppe niet te stoppeeeee!!! */
+    display: flex;
+    gap: 10px;
+    gap: 10px 20px;
+    border: 3px solid rgb(0, 255, 0);
+    height: 800px;
+    align-items: flex-start;
+    font-family: 'Raleway';
+  }
+  .initial {    
+    -webkit-flex: initial; /* Probeert zijn eigen lengte te houden maar als t niet kan dan past hij zich aan */
+            flex: initial;
+    width: 200px;
+    min-width: 100px;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+  }
+  .none {
+    -webkit-flex: none; /* Doet letterlijk het zelfde als initial maar als je resize dan blijft hij nog steeds de zelfde grootte dus eigenlijk een normale div */
+            flex: none;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+  }
+  .flex1 {
+    -webkit-flex: 1; /* Ja die flext zo hard dat hij altijd flext wanneer je de pagina resized */
+            flex: 1;
+    padding: 10px;
+    align-self: flex-end;
+    border: 2px solid blue;
+    border-radius: 5px;
+  }
+  .flex2 {
+    -webkit-flex: 2; /* Ja precies het zelfde als flex1 maar dan voor de volgende flex en als je er nog meer maakt dan ja dan word dat natuurlijk 3 deuhhhh */
+            flex: 2;
+    padding: 10px;
+    align-self: center;
+    border: 2px solid blue;
+    border-radius: 5px;
+  }

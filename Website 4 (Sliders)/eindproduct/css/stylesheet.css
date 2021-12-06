@@ -1,0 +1,372 @@
+
+
+
+/* 
+Medemogelijk gemaakt door https://codemyui.com/hamburger-menu-to-css-only-full-screen-slide-in-navigation-menu/
+
+En door Luc Stoffels zijn ouwe code wantja ik ben lui en Geen gemekker kaas is lekker 
+
+*/
+
+
+
+
+
+
+
+/* voor de font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
+/* variables die je snel kan aanpasse en dan ook worden aangepast op de website in het bboergir menu */
+ :root {
+	 --color-primary: #0f4a34;
+	 --color-secondary: #f0f7ee;
+	 --duration: 1.5s;
+	 --nav-duration: calc(var(--duration) / 4);
+	 --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+	 --space: 1rem;
+	 --font-primary: 'Helvetica', sans-serif;
+	 --font-heading: 'Merriweather', serif;
+	 --font-size: 1.125rem;
+	 --line-height: 1.5;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    }
+
+/* De container */
+div#container {
+  width: 100%;
+  margin: auto;
+  margin-top: 0px;
+}
+
+/* de Header */
+header {
+    height: 200px;
+    background-image: linear-gradient(to right, #17181c , #067c4c);
+}
+
+
+ /* stijl van het logo */
+div#logo {
+  position: absolute;
+  top: 20px;
+  left: 780px;
+  background-color: #00ed93;
+  border-radius: 7px;
+ }
+
+ /* de text krxKen he */
+ .krxken {
+   position: absolute;
+   font-size: 50px;
+   color: white;
+   top: 5%;
+   left: 25%;
+   font-family: "Lucida Console", "Courier New", monospace;
+ }
+
+ /* Het logo van de mooie krxken*/
+.Logo {
+  width: 150px;
+  height: 140px;
+  border-radius: 5px;
+}
+
+/* Section waar de nav is en het article */
+section {
+  position: absolute;
+  top: 200px;
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+}
+
+
+
+
+* {
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: var(--font-primary);
+	 font-size: var(--font-size);
+	 line-height: var(--line-height);
+}
+
+
+
+article {
+     position: absolute;
+    font-family: raleway;
+    left: 2%;
+}
+ .main-navigation-toggle {
+	 position: fixed;
+	 height: 1px;
+	 width: 1px;
+	 overflow: hidden;
+	 clip: rect(1px, 1px, 1px, 1px);
+	 white-space: nowrap;
+}
+ .main-navigation-toggle + label {
+	 position: absolute;
+	 top: calc(var(--space) * 1.5);
+	 left: calc(var(--space) * 2);
+	 cursor: pointer;
+	 z-index: 2;
+}
+ .icon--menu-toggle {
+	 --size: calc(1rem + 4vmin);
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: var(--size);
+	 height: var(--size);
+	 stroke-width: 6;
+}
+ .icon-group {
+	 transform: translateX(0);
+	 transition: transform var(--nav-duration) var(--ease);
+}
+
+
+/* kleur van die boergir */
+ .icon--menu {
+	 stroke: #00ff9a;
+}
+
+
+
+ .icon--close {
+	 stroke: var(--color-secondary);
+	 transform: translateX(-100%);
+}
+ .main-navigation {
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 display: flex;
+	 align-items: center;
+	 width: 100%;
+	 height: 100%;
+	 transform: translateX(-100%);
+	 transition: transform var(--nav-duration);
+	 z-index: 1;
+}
+ .main-navigation:after {
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background-color: var(--color-primary);
+	 transform-origin: 0 50%;
+	 z-index: -1;
+}
+ .main-navigation ul {
+	 font-size: 12vmin;
+	 font-family: var(--font-heading);
+	 width: 100%;
+}
+ .main-navigation li {
+	 --border-size: 1vmin;
+	 display: flex;
+	 align-items: center;
+	 position: relative;
+	 overflow: hidden;
+}
+ .main-navigation li:after {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 100%;
+	 height: var(--border-size);
+	 background-color: var(--color-secondary);
+	 transform-origin: 0 50%;
+	 transform: translateX(-100%) skew(15deg);
+}
+ .main-navigation a {
+	 display: list-item;
+	 width: 100%;
+	 max-width: 94%;
+	 margin: 0 auto;
+	 color: var(--color-secondary);
+	 line-height: 1.5;
+	 text-decoration: none;
+	 user-select: none;
+	 padding: var(--space) calc(var(--space) * 2) calc(var(--space) + var(--border-size) / 2);
+	 transform: translateY(100%);
+	 font-family: raleway;
+	 font-size: 6rem;
+	border-radius: 25px;
+	border: 2px solid white;
+	background-color: #0f4a34;
+}
+ .main-content {
+	 margin: 6rem auto;
+	 max-width: 70ch;
+	 padding: 0 calc(var(--space) * 2);
+	 transform: translateX(0);
+	 transition: transform calc(var(--nav-duration) * 2) var(--ease);
+}
+ .main-content > * + * {
+	 margin-top: calc(var(--space) * var(--line-height));
+}
+ .main-navigation-toggle:checked ~ label .icon--menu-toggle .icon-group {
+	 transform: translateX(100%);
+}
+ .main-navigation-toggle:checked ~ .main-content {
+	 transform: translateX(10%);
+}
+ .main-navigation-toggle:checked ~ .main-navigation {
+	 transition-duration: 0s;
+	 transform: translateX(0);
+}
+ .main-navigation-toggle:checked ~ .main-navigation:after {
+	 animation: nav-bg var(--nav-duration) var(--ease) forwards;
+}
+ .main-navigation-toggle:checked ~ .main-navigation li:after {
+	 animation: nav-line var(--duration) var(--ease) forwards;
+}
+ .main-navigation-toggle:checked ~ .main-navigation a {
+	 animation: link-appear calc(var(--duration) * 1.5) var(--ease) forwards;
+}
+ .main-navigation-toggle:checked ~ .main-navigation li:nth-child(1):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(1) a {
+	 animation-delay: calc((var(--duration) / 2) * 1 * 0.125);
+}
+ .main-navigation-toggle:checked ~ .main-navigation li:nth-child(2):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(2) a {
+	 animation-delay: calc((var(--duration) / 2) * 2 * 0.125);
+}
+ .main-navigation-toggle:checked ~ .main-navigation li:nth-child(3):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(3) a {
+	 animation-delay: calc((var(--duration) / 2) * 3 * 0.125);
+}
+ .main-navigation-toggle:checked ~ .main-navigation li:nth-child(4):after, .main-navigation-toggle:checked ~ .main-navigation li:nth-child(4) a {
+	 animation-delay: calc((var(--duration) / 2) * 4 * 0.125);
+}
+ @keyframes nav-bg {
+	 from {
+		 transform: translateX(-100%) skewX(-15deg);
+	}
+	 to {
+		 transform: translateX(0);
+	}
+}
+ @keyframes nav-line {
+	 0% {
+		 transform: scaleX(0);
+		 transform-origin: 0 50%;
+	}
+	 35% {
+		 transform: scaleX(1.001);
+		 transform-origin: 0 50%;
+	}
+	 65% {
+		 transform: scaleX(1.001);
+		 transform-origin: 100% 50%;
+	}
+	 100% {
+		 transform: scaleX(0);
+		 transform-origin: 100% 50%;
+	}
+}
+ @keyframes link-appear {
+	 0%, 25% {
+		 transform: translateY(100%);
+	}
+	 50%, 100% {
+		 transform: translateY(0);
+	}
+}
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 23px;
+    bottom: 0px;
+    font-size: 18px;
+    background-color: #0f4a34;
+    color: white;
+    text-align: center;
+  }
+
+  .mail {
+    color: #ff0000;
+    text-decoration: none;
+  }
+  
+  .mail:hover {
+    color: yellow;
+  }
+
+/* ja ff dat kleurtje verandere anders is het zo moker saai */
+  .main-navigation a:hover { 
+	color:yellow;
+	border-radius: 50px;
+	border: 5px solid yellow;
+	background-color: black;
+  }
+
+ /* .kaas {     			-- idk wat dit nog moet voorstelle op dit moment ik laat het gwn hier is leuk!
+	display: inline-block;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	line-height: 1.5;
+	border: 5px solid white;
+
+  } */
+
+
+  carousel {
+    position: absolute;
+    font-family: raleway;
+	width: 100%;
+	text-align: center;
+	font-family: Trebuchet MS;
+	display: block;
+	font-size: 6vmin;
+}
+carousel page {
+	position: absolute;
+	top: 2em;
+	left: 0;
+	width: 100%;
+	transition: transform 0.5s;
+	transform: scale(0);
+}
+carousel page div {
+	padding: 3em;
+}
+carousel page label {
+	cursor: pointer;
+	background: yellow;
+	padding: 1em 2em;
+	font-size: 30%;
+	border: 2px solid black;
+	border-radius: 25px;
+	font-family: 'Raleway';
+}
+carousel #page1cb:checked ~ #page1 {
+	transform: scale(1);
+}
+carousel #page2cb:checked ~ #page2 {
+	transform: scale(1);
+}
+carousel #page3cb:checked ~ #page3 {
+	transform: scale(1);
+}
+carousel #page4cb:checked ~ #page4 {
+	transform: scale(1);
+}
+carousel #page5cb:checked ~ #page5 {
+	transform: scale(1);
+}

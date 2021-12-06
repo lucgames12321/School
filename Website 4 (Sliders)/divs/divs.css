@@ -1,0 +1,56 @@
+/* 
+Medemogelijk gemaakt door:
+ -- https://www.w3schools.com/howto/howto_js_collapsible.asp
+
+
+En door Luc Stoffels zijn ouwe code wantja ik ben lui en Geen gemekker kaas is lekker 
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Ubuntu&display=swap'); /*Raleway en Ubuntu font wantja ubuntu is gwn koel vind ik */
+
+body,html {
+    background-color: gray;
+}
+
+h2 { 
+    font-family: 'Raleway';
+}
+.collapsible {
+    background-color: rgb(90, 90, 90);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Raleway';
+    border-radius: 5px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: rgb(32, 32, 32);
+  }
+  
+  .collapsible:after {
+    content: '\2BC5';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2BC6";
+  }
+  
+  .content {
+    padding: 0 18px;
+    font-family: 'Ubuntu';
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    border-radius: 50px;
+  }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Automatische slider</title>
+    <link rel="stylesheet" href="slider.css" type="text/css" />
+  </head>
+
+
+
+              <div class="kaas">
+                <img class="HOMO" src="https://i.ytimg.com/vi/QiCUvLpGp1k/maxresdefault.jpg">
+                <img class="HOMO" src="https://c.tenor.com/uBlrEz2HyPcAAAAC/roblox-dance.gif">
+                <img class="HOMO" src="https://thumbs.gfycat.com/EagerGregariousArmyant-max-1mb.gif">
+              </div>
+          
+
+
+              <!-- waaarom krijg ik dit niet werkend met men eigen manual slider was deze daarom maar zo hoppa ez-->
+              <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("HOMO");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000); // Kaas is lekker ja 5000ms is dus 5 secondjes kan ook langer 
+              }
+              </script>
+
+</html>
+
+
+<!-- 
+MEDE MOGELIJK GEMAAKT DOOR https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_rr omdat ik totaal niet wist hoe ik het voor mekaar moet krijgen met die andere
+en nu niet veel zin heb om het te fixen
+ -->

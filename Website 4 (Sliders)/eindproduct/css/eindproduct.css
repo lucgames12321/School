@@ -1,16 +1,12 @@
-
-
-
 /* 
-Medemogelijk gemaakt door https://codemyui.com/hamburger-menu-to-css-only-full-screen-slide-in-navigation-menu/
+Medemogelijk gemaakt door:
+ -- https://codemyui.com/hamburger-menu-to-css-only-full-screen-slide-in-navigation-menu/ -Burger menu
+ -- https://codepen.io/ivorjetski/pen/jObwWYj -Carousel gebeure 
+
 
 En door Luc Stoffels zijn ouwe code wantja ik ben lui en Geen gemekker kaas is lekker 
 
 */
-
-
-
-
 
 
 
@@ -52,30 +48,29 @@ header {
 }
 
 
- /* stijl van het logo */
-div#logo {
-  position: absolute;
-  top: 20px;
-  left: 780px;
-  background-color: #00ed93;
-  border-radius: 7px;
- }
+
 
  /* de text krxKen he */
  .krxken {
    position: absolute;
-   font-size: 50px;
+   font-size: 2vw;
    color: white;
-   top: 5%;
+   top: 2vh;
    left: 25%;
-   font-family: "Lucida Console", "Courier New", monospace;
+   font-family: 'Raleway';
  }
 
  /* Het logo van de mooie krxken*/
 .Logo {
-  width: 150px;
-  height: 140px;
-  border-radius: 5px;
+position: relative;
+  display: block;
+  margin-left: 55%;
+  margin-right: 55%;
+  top: 10px;
+  width: auto;
+  height: 160px;
+  border-radius: 10px;
+  border: 5px solid #00f89b;
 }
 
 /* Section waar de nav is en het article */
@@ -90,6 +85,11 @@ section {
 
 
 
+
+
+
+
+/* Hamburger menu zooi (doe mij maar een MC Plant!) */
 * {
 	 box-sizing: border-box;
 }
@@ -98,8 +98,6 @@ section {
 	 font-size: var(--font-size);
 	 line-height: var(--line-height);
 }
-
-
 
 article {
      position: absolute;
@@ -115,7 +113,7 @@ article {
 	 white-space: nowrap;
 }
  .main-navigation-toggle + label {
-	 position: fixed;
+	 position: absolute;
 	 top: calc(var(--space) * 1.5);
 	 left: calc(var(--space) * 2);
 	 cursor: pointer;
@@ -194,9 +192,9 @@ article {
 	 transform: translateX(-100%) skew(15deg);
 }
  .main-navigation a {
-	 display: inline-block;
+	 display: list-item;
 	 width: 100%;
-	 max-width: 100%;
+	 max-width: 94%;
 	 margin: 0 auto;
 	 color: var(--color-secondary);
 	 line-height: 1.5;
@@ -206,6 +204,9 @@ article {
 	 transform: translateY(100%);
 	 font-family: raleway;
 	 font-size: 6rem;
+	border-radius: 25px;
+	border: 2px solid white;
+	background-color: #0f4a34;
 }
  .main-content {
 	 margin: 6rem auto;
@@ -303,4 +304,149 @@ footer {
   .mail:hover {
     color: yellow;
   }
- 
+
+/* ja ff dat kleurtje verandere anders is het zo moker saai */
+  .main-navigation a:hover { 
+	color:yellow;
+	border-radius: 50px;
+	border: 5px solid yellow;
+	background-color: black;
+  }
+
+
+
+
+
+
+  /* Dit is alles voor de o zo mooie carousel WIEEEEEE!!! */
+  carousel {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-family: Trebuchet MS;
+	display: block;
+	font-size: 6vmin;
+	cursor: default;
+}
+
+carousel page {
+	position: absolute;
+	top: 2em;
+	left: 0;
+	width: 100%;
+	transition: transform 0.5s;
+	transform: scale(0);
+}
+
+carousel page div {
+	padding: 3em;
+}
+
+carousel page label {
+	cursor: pointer;
+	background: #ffa500;
+	padding: 1em 2em;
+	font-size: 30%;
+	border: 2px solid white;
+	border-radius: 1000px;
+	font-family: 'Raleway';
+	color: white;
+}
+
+carousel page label:hover {
+	cursor: pointer;
+	background: #e99802;
+	padding: 1em 2em;
+	font-size: 30%;
+	border: 2px solid black;
+	border-radius: 1000px;
+	font-family: 'Raleway';
+	color: black;
+}
+
+
+.bollekes:after{
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+		cursor:pointer;
+}
+
+.bollekes:checked:after {
+	width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #ffa500;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+
+}
+
+
+carousel #page1cb:checked ~ #page1 {
+	transform: scale(1);
+}
+carousel #page2cb:checked ~ #page2 {
+	transform: scale(1);
+}
+carousel #page3cb:checked ~ #page3 {
+	transform: scale(1);
+}
+carousel #page4cb:checked ~ #page4 {
+	transform: scale(1);
+}
+carousel #page5cb:checked ~ #page5 {
+	transform: scale(1);
+}
+
+
+
+.knop_terug{
+	position: absolute;
+	left: 30%;
+	top: 60%;
+}
+
+.knop_next{
+	position: absolute;
+	right: 30%;
+	top: 60%;
+}
+
+.foto1{
+	position: absolute;
+	top: 25%;
+	left: 37.5%;
+	width: 25%;
+	height: auto;
+}
+
+.foto2{
+	position: absolute;
+	top: 5%;
+	left: 37.5%;
+	width: 25%;
+	height: auto;
+}
+
+
+.foto5 {
+	position: absolute;
+	top: 5%;
+	left: 37.5%;
+	width: 25%;
+	height: 125%;
+}

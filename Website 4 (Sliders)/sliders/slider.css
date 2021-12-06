@@ -1,0 +1,192 @@
+/* 
+Medemogelijk gemaakt door:
+ -- https://codemyui.com/hamburger-menu-to-css-only-full-screen-slide-in-navigation-menu/ -Burger menu
+ -- https://codepen.io/ivorjetski/pen/jObwWYj -Carousel gebeure 
+
+
+En door Luc Stoffels zijn ouwe code wantja ik ben lui en Geen gemekker kaas is lekker 
+
+*/
+
+
+
+/* voor de font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
+/* variables die je snel kan aanpasse en dan ook worden aangepast op de website in het bboergir menu */
+ :root {
+	 --color-primary: #0f4a34;
+	 --color-secondary: #f0f7ee;
+	 --duration: 1.5s;
+	 --nav-duration: calc(var(--duration) / 4);
+	 --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+	 --space: 1rem;
+	 --font-primary: 'Helvetica', sans-serif;
+	 --font-heading: 'Merriweather', serif;
+	 --font-size: 1.125rem;
+	 --line-height: 1.5;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    }
+
+
+/* ja ff dat kleurtje verandere anders is het zo moker saai */
+  .main-navigation a:hover { 
+	color:yellow;
+	border-radius: 50px;
+	border: 5px solid yellow;
+	background-color: black;
+  }
+
+
+
+
+
+
+  /* Dit is alles voor de o zo mooie carousel WIEEEEEE!!! */
+  carousel {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-family: Trebuchet MS;
+	display: block;
+	font-size: 6vmin;
+	cursor: default;
+}
+
+carousel page {
+	position: absolute;
+	top: 2em;
+	left: 0;
+	width: 100%;
+	transition: transform 0.5s;
+	transform: scale(0);
+}
+
+carousel page div {
+	padding: 3em;
+}
+
+carousel page label {
+	cursor: pointer;
+	background: #ffa500;
+	padding: 1em 2em;
+	font-size: 30%;
+	border: 2px solid white;
+	border-radius: 1000px;
+	font-family: 'Raleway';
+	color: white;
+}
+
+carousel page label:hover {
+	cursor: pointer;
+	background: #e99802;
+	padding: 1em 2em;
+	font-size: 30%;
+	border: 2px solid black;
+	border-radius: 1000px;
+	font-family: 'Raleway';
+	color: black;
+}
+
+
+.bollekes:after{
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+		cursor:pointer;
+}
+
+.bollekes:checked:after {
+	width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #ffa500;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+
+}
+
+
+carousel #page1cb:checked ~ #page1 {
+	transform: scale(1);
+}
+carousel #page2cb:checked ~ #page2 {
+	transform: scale(1);
+}
+carousel #page3cb:checked ~ #page3 {
+	transform: scale(1);
+}
+carousel #page4cb:checked ~ #page4 {
+	transform: scale(1);
+}
+carousel #page5cb:checked ~ #page5 {
+	transform: scale(1);
+}
+
+
+
+.knop_terug{
+	position: absolute;
+	left: 30%;
+	top: 60%;
+}
+
+.knop_next{
+	position: absolute;
+	right: 30%;
+	top: 60%;
+}
+
+.foto1{
+	position: absolute;
+	top: 25%;
+	left: 37.5%;
+	width: 25%;
+	height: auto;
+}
+
+.foto2{
+	position: absolute;
+	top: 5%;
+	left: 37.5%;
+	width: 25%;
+	height: auto;
+}
+
+
+.foto5 {
+	position: absolute;
+	top: 5%;
+	left: 37.5%;
+	width: 25%;
+	height: 125%;
+}
+
+
+.HOMO {
+	position: absolute;
+	left: 37%;
+	top: 25%;
+	display: none;
+	height: auto;
+	width: 20%;
+}

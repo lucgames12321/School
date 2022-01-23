@@ -12,22 +12,23 @@
 
 
             <header>
-              
+              <!-- De automatische slider wantja die moest er ook in alleen fotos nog aangepast worde -->
               <div class="autoslider">
-                <img class="foto" src="https://i.ytimg.com/vi/QiCUvLpGp1k/maxresdefault.jpg">
-                <img class="foto" src="https://c.tenor.com/uBlrEz2HyPcAAAAC/roblox-dance.gif">
+                <img class="foto" src="img/talstelsel1.png">
+                <img class="foto" src="img/talstelsels2.png">
                 <img class="foto" src="https://media1.giphy.com/media/hP13kYdltFNebQ32Me/giphy.gif">
               </div>
-
+                
+                <!-- Talstelsels text ja --> 
                 <h1 class="krxken">Talstelsels</h1>
                 <div id="logo">
-                <img class="Logo" src="img/logo.png" alt="Logo">
+                <a href="eindproduct.html"><img class="Logo" src="img/logo.png" alt="Logo"></a>
                 </div>
             </header>
 
 
 
-
+              <!-- DIT IS HET O ZO LEKKERE HAMBRGER MENU (doe mij maar een big mac tho) Ik kon niet aan meer websites komen want ze reageren allemaal niet (die zijn naar Ibiza) --> 
         <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
         <label for="page-nav-toggle">
             <svg class="icon--menu-toggle" viewBox="0 0 60 30">
@@ -46,13 +47,13 @@
         </label>
         <nav class="main-navigation">
             <ul>
-            <li><a href="kaas.html">Home</a></li>
+            <li><a href="10101.nl/9462">Home</a></li>
             <li class="kaas"></li>
-            <li><a href="http://10101.nl/9219">SQL</a></li>
-            <li class="kaas"></li>
-            <li><a href="https://www.youtube.com/watch?v=6DcinsRPR5s&ab_channel=GoatedBeats">Chinees</a></li>
+            <li><a href="https://10101.nl/9219/website3/sql.html">SQL</a></li>
             <li class="kaas"></li>
             <li><a href="http://10101.nl/9217">Logische Schakelingen</a></li>
+            <li class="kaas"></li>
+            <li><a href="http://10101.nl/9229">Coderingen</a></li>
             <li class="kaas"></li>
             </ul>
         </nav>
@@ -64,90 +65,67 @@
 
         <!-- misschien dit in een flexbox zette zou koeler zijn -->
         <section>
-          <h2>Kaas:</h2>
+          <h2>Menu:</h2>
             <div class="flexbox"> 
           
               <div class="flex1">
-                <button class="collapsible">Hoofdstuk 1</button>
+                <button class="collapsible">PDF Document</button>
                 <div class="content">
-                    <p>Wist je dat ik hier op de eindpagina wat moet schrijven over talstelsels??</p>
+                    <p>het pdf document van de heer Dohmen over talstelsels: <a href="https://drive.google.com/file/d/1MrVILcPbAHLfRP5zIN6GvPzsSKokyUfe/view"><strong>Link</strong></a>  <br> <br> <iframe src="https://drive.google.com/file/d/1MrVILcPbAHLfRP5zIN6GvPzsSKokyUfe/preview" width="640" height="480" allow="autoplay"></iframe></p>
                 </div>  
               </div>
       
               <div class="flex2">
-                <button class="collapsible">Hoofdstuk 2</button>
+                <button class="collapsible">Zalige uitleg video</button>
                 <div class="content">
-                    <p>Wist je dat kaas een overheerlijk lekker smikkel iets is?? </p>
+                    <p>Hier een uitleg video over talstelsels als het document van Dohmen te saai is: <br><br> <iframe width="640" height="480" src="https://www.youtube.com/embed/eCqtuKQX_ac" title="Talstelsels" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
                 </div>    
               </div>
       
       
               <div class="flex3">
-                <button class="collapsible">Hoofdstuk 3</button>
-                <div class="content">
-                    <p>Wist je dat je hier ook iframes neer kan tyfen met daarin alles wat jezelf leuk vind lmao: <br><br> <iframe width="480" height="260" src="https://www.youtube.com/embed/PR50e-nLW1s?list=PLhnTtPIrfD8bKPwDHa7FEG7aPJ2K1Ln0F" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
-                </div>  
-              </div>
-      
-              <div class="flex4">
-                <button class="collapsible">Hoofdstuk 4</button>
-                <div class="content">
-                    <p>Wist je dat je hier ook iframes neer kan tyfen met daarin alles wat jezelf leuk vind lmao: <br><br> <iframe width="480" height="260" src="https://www.youtube.com/embed/PR50e-nLW1s?list=PLhnTtPIrfD8bKPwDHa7FEG7aPJ2K1Ln0F" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
-                </div>   
-              </div>
+                <carousel>
+                  <input class="bollekes" type="radio" id="page1cb" name="pages" checked />
+                  <input class="bollekes" type="radio" id="page2cb" name="pages" />
+                  <input class="bollekes" type="radio" id="page3cb" name="pages" />
+                  <input class="bollekes" type="radio" id="page4cb" name="pages" />
+                 
+                  <!-- page 1 -->
+                  <page id="page1">
+                    <div><img src="img/binary.jpg" alt="Binary" class="foto1"></div>
+                    <label class="knop_terug" for="page5cb"><b>🢀</b></label>
+                    <label class="knop_next" for="page2cb"><b>🢂</b></label>
+                  </page>
+                 
+                  <!-- page 2 -->
+                  <page id="page2">
+                    <div><img src="img/hexadecimaal.png" alt="Hexadecimaal" class="foto2"></div>
+                    <label class="knop_terug" for="page1cb"><b>🢀</b></label>
+                    <label class="knop_next" for="page3cb"><b>🢂</b></label>
+                  </page>
+                  
+                  <!-- page 3 -->
+                  <page id="page3">
+                    <div><img src="img/Fluffy.png" alt="Fluffy het konien" class="foto3"></div>
+                    <label class="knop_terug" for="page2cb"><b>🢀</b></label>
+                    <label class="knop_next" for="page4cb"><b>🢂</b></label>
+                  </page>
+                 
+                  <!-- page 4 -->
+                  <page id="page4">
+                    <div><img src="img/calculator.png" alt="Rekenmachine" class="foto2"></div>
+                    <label class="knop_terug" for="page3cb"><b>🢀</b></label>
+                    <label class="knop_next" for="page5cb"><b>🢂</b></label>
+                  </page>
 
+                  <carousel>  
+              </div>
 
             </div>
           </section>
 
-          <!-- Fak die carousel die zit in de weg ja effe oprotte-->
-          <carousel>
-            <input class="bollekes" type="radio" id="page1cb" name="pages" checked />
-            <input class="bollekes" type="radio" id="page2cb" name="pages" />
-            <input class="bollekes" type="radio" id="page3cb" name="pages" />
-            <input class="bollekes" type="radio" id="page4cb" name="pages" />
-            <input class="bollekes" type="radio" id="page5cb" name="pages" />
-           
-            <!-- page 1 -->
-            <page id="page1">
-              <div><img src="https://i.ytimg.com/vi/QiCUvLpGp1k/maxresdefault.jpg" alt="FORTNIe" class="foto1"></div>
-              <label class="knop_terug" for="page5cb"><b>🢀</b></label>
-              <label class="knop_next" for="page2cb"><b>🢂</b></label>
-            </page>
-           
-            <!-- page 2 -->
-            <page id="page2">
-              <div><img src="https://c.tenor.com/uBlrEz2HyPcAAAAC/roblox-dance.gif" alt="FORTNIe" class="foto2"></div>
-              <label class="knop_terug" for="page1cb"><b>🢀</b></label>
-              <label class="knop_next" for="page3cb"><b>🢂</b></label>
-            </page>
-            
-            <!-- page 3 -->
-            <page id="page3">
-              <div>Page Three!</div>
-              <label class="knop_terug" for="page2cb"><b>🢀</b></label>
-              <label class="knop_next" for="page4cb"><b>🢂</b></label>
-            </page>
-           
-            <!-- page 4 -->
-            <page id="page4">
-              <div>Page Four!</div>
-              <label class="knop_terug" for="page3cb"><b>🢀</b></label>
-              <label class="knop_next" for="page5cb"><b>🢂</b></label>
-            </page>
-            
-            <!-- page 5 -->
-            <page id="page5">
-              <div>
-                <iframe src="https://open.spotify.com/embed/playlist/19pqoP37qriDGOTJgsVTMk?utm_source=generator" width="25%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="foto5"></iframe>
-              </div>
-              <label class="knop_terug" for="page4cb"><b>🢀</b></label>
-              <label class="knop_next" for="page1cb"><b>🢂</b></label>
-            </page>
-            <carousel>
-
-
-
+          
+          <!-- De credits naar luukie pantoffels om deze website in mekaar te flansen en credits naar alle informatie die ik heb gekregen en de websites die ik daarvoor gebruik heb!!!-->
           <footer>
             © 2020-2022 Luukie Pantoffels
             <a class="mail" title="Github repository" href="https://github.com/lucgames12321/School" target="_blank"><i class="fab fa-github"></i></a>
@@ -161,8 +139,10 @@
 
 
           </div>
-
+          <!-- Eigenlijk wou ik geen javascript gebruiken maar helaas heb het voor deze keer toch gedaan wantja-->
           <script src="js/script.js"></script>
+
+          <!-- Dit is voor de icoontjes die je ziet onder aan me pagina zo kan ik makkelijker en sneller icoontjes toevoegen door alleen een specefieke class naam te geven -->
           <script src="https://kit.fontawesome.com/b3e9ba1ca5.js" crossorigin="anonymous"></script>
     </body>
 

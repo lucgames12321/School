@@ -568,3 +568,13 @@ h2 {
 	/* flex-grow: 0; */ 
 	width: 100%;
   }
+
+  .flex4 {
+    -webkit-flex: 4; /* Ja precies het zelfde als flex1 maar dan voor de volgende flex en als je er nog meer maakt dan ja dan word dat natuurlijk 3 deuhhhh */
+            flex: 4;
+    padding: 10px;
+    border: 0px solid blue;
+    border-radius: 5px;
+	/* flex-grow: 0; */ 
+	width: 100%;
+  }

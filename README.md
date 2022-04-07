@@ -27,3 +27,8 @@ Ja als je je eigen creaties wilt indiene dan maak gwn een pull request en dan bo
 ## Kaas?
 eet kaas als een baas wantja kaas is lekker dus geen gemekker 
 idk wat ik er nog meer bij zou zette hierbij is maar mijn school repo project dus ja heb je niet veel aan...
+
+## Python
+Na er is een nieuw mapje bijgekomen voor de python script ja nee ik ga geen hele nieuwe repo maken voor alleen python
+Er komt misschien meer in ligt eraan of ik zin heb om op te letten in de lessen van Informatica nou dat was het wel dus eet smakelijk 
+WELTRUSTEN...

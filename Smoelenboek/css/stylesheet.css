@@ -1,0 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+html, body {
+    background-color: pink;
+    font-family: "Fredoka One", sans-serif;
+}
+
+h1 {
+    color: rgb(3, 228, 172);
+}
+
+

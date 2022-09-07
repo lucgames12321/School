@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Fredoka');
 
 * {
     box-sizing: border-box;
@@ -7,21 +8,22 @@
 
 body {
     margin: 0;
-    background-color: #36393e;
-    font-family: "Fredoka One", sans-serif;
+    background-color: #1d252b;
+    font-family: "Fredoka", sans-serif;
 }
 
 
 header {
   overflow: hidden;
-  background-color: #1e2124;
+  background-color: #00365e;
   padding: 10px 10px;
-  border-bottom: 3px solid #282b30;
+  border-bottom: 3px solid #00243f;
+  font-family: "Fredoka One", sans-serif;
 }
 
 header a {
   float: left;
-  color: #7289da;
+  color: #dd0069;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -37,11 +39,11 @@ header a.logo {
 
 header a:hover {
   background-color: #282b30;
-  color: #8fa7ff;
+  color: #dd0069;
 }
 
 header a.active {
-  background-color: #7289da;
+  background-color: #dd0069 ;
   color: white;
 }
 

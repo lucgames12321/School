@@ -1,13 +1,107 @@
 
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
 
-html, body {
-    background-color: pink;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #36393e;
     font-family: "Fredoka One", sans-serif;
 }
 
-h1 {
-    color: rgb(3, 228, 172);
+
+header {
+  overflow: hidden;
+  background-color: #1e2124;
+  padding: 10px 10px;
+  border-bottom: 3px solid #282b30;
+}
+
+header a {
+  float: left;
+  color: #7289da;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 8px;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: #282b30;
+  color: #8fa7ff;
+}
+
+header a.active {
+  background-color: #7289da;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+/* @media screen and (max-width: 500px) { /*Zorgt evoor dat 500px width hij dan gewoon normaal wordt ipv onder elkaar
+  header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+} */
+
+
+.header-right .icon {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .header-right a:not(:first-child) {display: none;}
+    .header-right a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header-right.responsive {position: relative;}
+    .header-right.responsive .icon {
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+    .header-right.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+.Text {
+    padding-left:20px;
+    color: white;
 }
 
 
+
+/* h1 {
+    color: rgb(3, 228, 172);
+}
+
+#image {
+    width: 100%;
+    height: auto;
+} */

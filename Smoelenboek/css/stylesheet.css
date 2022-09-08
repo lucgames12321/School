@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     margin: 0;
     background-color: #1d252b;
@@ -91,14 +93,6 @@ header a.active {
   }
 
 
-
-.Text {
-    padding-left:20px;
-    color: white;
-}
-
-
-
 /* h1 {
     color: rgb(3, 228, 172);
 }
@@ -107,3 +101,97 @@ header a.active {
     width: 100%;
     height: auto;
 } */
+
+
+/* Alles voor de Profile Header hier onder */
+div.Profile-Header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background: url("../img/Banner2.png") #dd0069;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  height: 300px;
+  width: 80%;
+  background-size: cover 100%; /*Zorgt ervoor dat dus wel de height aangehouden word want ik werd er gek van dat de image resized de hele tijd */
+}
+
+
+img.profile-picture {
+  position: absolute;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  top: 25px;
+  filter: brightness(100%);
+}
+
+
+.Profile-Text {
+  position: absolute;
+  color: white;
+  top: 160px;
+  font-family: "Fredoka", sans-serif;
+}
+
+
+.Profile-Text2 {
+  position: absolute;
+  color: #ff007b;
+  top: 200px;
+  font-size: 20px;
+}
+/* End of Profile Header */
+
+
+
+
+
+
+
+
+
+.Text {
+    padding-left:20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER VAN DE PAGINA LAAT DIT ONDERAAN STAAN ANDERS KRIJG IK AUTISME */
+footer {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
+  background-color: #00365e;
+  color: #dd0069;
+  text-align: center;
+  border-top: 3px solid #00243f;
+}
+
+.Footer-Links {
+  text-align: center;
+  color: #dd0069;
+  text-indent: 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.Footer-Links:hover {
+  color: #ff00f2;
+}
+/* End of Footer */

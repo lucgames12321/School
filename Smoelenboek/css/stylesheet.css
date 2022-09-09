@@ -170,7 +170,7 @@ img.profile-picture {
 }
 
 .flexbox div {
-  flex: 49%;
+  flex: 49.5%;
 }
 
 .flexbox h1 {
@@ -188,7 +188,7 @@ img.profile-picture {
 
 .Flex-Text {
   margin-left: 10px;
-  margin-top: -5px;
+  padding-bottom: 10px;
 }
 
 
@@ -217,6 +217,10 @@ img.profile-picture {
   background-color: #00365e;
   border-radius: 15px;
   width: 100%;
+}
+
+table {
+  color: white;
 }
 /* End of Flexbox */
 
@@ -273,7 +277,7 @@ footer {
 /* Mobile design features */
 @media screen and (max-width: 550px) {
   .Flex-Text {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .flexbox h1 {
@@ -288,3 +292,8 @@ footer {
     font-size: 20px;
   }
 }
+
+
+
+
+

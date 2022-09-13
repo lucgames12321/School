@@ -14,7 +14,6 @@ body {
     min-height: 400px;
     margin-bottom: 200px;
     clear: both;
-    overflow: hidden;
     font-family: "Fredoka", sans-serif;
 }
 
@@ -163,7 +162,7 @@ img.profile-picture {
   gap: 10px 10px;
   border: 0px solid black;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 98%;
@@ -203,7 +202,7 @@ img.profile-picture {
 }
 
 .flex2 {
-  -webkit-flex: 2; /* Ja precies het zelfde als flex1 maar dan voor de volgende flex en als je er nog meer maakt dan ja dan word dat natuurlijk 3 deuhhhh */
+  -webkit-flex: 2; /* Ja precies het zelfde als flex1 maar dan voor de volgende flex en als je er nog meer maakt dan ja dan word dat natuurlijk 2 deuhhhh */
   flex: 2;
   border: 2px solid #00243f;
   background-color: #00365e;
@@ -212,8 +211,17 @@ img.profile-picture {
 }
 
 .flex3 {
-  -webkit-flex: 3; /* Ja precies het zelfde als flex1 maar dan voor de volgende flex en als je er nog meer maakt dan ja dan word dat natuurlijk 3 deuhhhh */
+  -webkit-flex: 3; /* Ja precies het zelfde als flex2 maar dan voor de volgende flex en als je er nog meer maakt dan ja dan word dat natuurlijk 3 deuhhhh */
   flex: 3;
+  border: 2px solid #00243f;
+  background-color: #00365e;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.flex4 {
+  -webkit-flex: 4; /* Ja precies het zelfde als flex3 maar dan voor de volgende flex en als je er nog meer maakt dan ja dan word dat natuurlijk 4 deuhhhh */
+  flex: 4;
   border: 2px solid #00243f;
   background-color: #00365e;
   border-radius: 15px;
@@ -222,6 +230,38 @@ img.profile-picture {
 
 table {
   color: white;
+}
+
+
+.HyperLink {
+  color: #ff007b;
+  text-decoration: none;
+}
+
+.HyperLink:hover {
+  color: white;
+  text-decoration: none;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 7px;
+  text-align: center;
 }
 /* End of Flexbox */
 

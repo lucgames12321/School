@@ -243,15 +243,14 @@ table {
 }
 
 div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
+  margin: 20px;
   float: left;
   width: 180px;
   border-radius: 5px;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 2px solid #ff007b;
 }
 
 div.gallery img {

@@ -11,8 +11,7 @@
 body {
     margin: 0;
     background-color: #1d252b;
-    min-height: 400px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     clear: both;
     font-family: "Fredoka", sans-serif;
 }
@@ -62,7 +61,7 @@ header a.active {
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 780px) {
     .header-right a:not(:first-child) {display: none;}
     .header-right a.icon {
       float: right;
@@ -70,7 +69,7 @@ header a.active {
     }
   }
   
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 780px) {
     .header-right.responsive {position: relative;}
     .header-right.responsive .icon {
       position: relative;
@@ -248,6 +247,7 @@ div.gallery {
   border: 1px solid #ccc;
   float: left;
   width: 180px;
+  border-radius: 5px;
 }
 
 div.gallery:hover {
@@ -257,6 +257,7 @@ div.gallery:hover {
 div.gallery img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 div.desc {

@@ -27,6 +27,8 @@ var myIndex = 0;
     setTimeout(carousel, 5000); // Kaas is lekker ja 5000ms is dus 5 secondjes kan ook langer 
 }
 
+
+
 // Code voor de Simple Automatic slider2
 var myIndex1 = 0;
   carousel1();

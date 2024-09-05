@@ -10,7 +10,7 @@ paint.speed(0)
 
 # Arrow-Keys control function
 def up():
-    paint.setheading(90) #Jemoeder
+    paint.setheading(90) #Jemoederrrrr
     paint.forward(100)
 
 def down():
